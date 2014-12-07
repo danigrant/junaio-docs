@@ -9,10 +9,29 @@ Create an XML file with links to your tracking data (see creating tracking data)
 arelConfig.xml:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-<results trackingurl="Assets/TrackingData.zip">
-  <arel><![CDATA[arelTutorial.html]]></arel>
+<results trackingurl="TrackingData.zip">
+  <arel><![CDATA[arelApp.html]]></arel>
 </results>
 ```
+
+Create an html file to contain links to JS libraries and files as well as serve as the DOM overlay to your app:
+
+arelApp.html:
+```
+<html>
+<head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8' />
+	<script type="text/javascript" src="arel.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+</head>
+<body></body>
+</html>
+
+```
+
+Make sure to link to the arel javascript library.
 
 ## Junaio and the HTML5 Canvas API
 
