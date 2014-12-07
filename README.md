@@ -63,5 +63,5 @@ window.onerror = function(msg) {
 
 If you are using Processing JS in your app, then another way to log is with `processing.println("logging")`. I prefer this because it is blank unless you write to it, unlike the mess of arel logs.
 
-
+## Junaio and the HTML5 Canvas API
 
