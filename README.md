@@ -2,6 +2,37 @@ junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
 
+## Junaio and the HTML5 Canvas API
+
+All of the canvas' built in functions work extremely well in Junaio. Two great resources here:
+
+* [docs](http://www.rgraph.net/reference/index.html)
+* [tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
+
+## Debugging and Logging
+
+Arel has its own logging interface. To initiate it, run 
+
+```
+arel.Debug.activate();
+arel.Debug.activateArelLogStream();
+```
+
+inside your `arel.sceneReady` function. 
+
+To log something to arel's console, use , `arel.Debug.log("logging")` the same way you might use `console.log`.
+
+Arel populates the debugger with its own logging, so I also found it helpful 
+to create popup alerts for every error to catch when things go wrong:
+
+```
+window.onerror = function(msg) {
+	   alert('Error: ' + msg);
+}
+```
+
+If you are using Processing JS in your app, then another way to log is with `processing.println("logging")`. I prefer this because it is blank unless you write to it, unlike the mess of arel logs.
+
 ## Tracking the image.
 
 [Download](http://ar.metaio.com/download_creator) the Metaio Creator.
@@ -38,34 +69,3 @@ Give a channel name, description, link to the app's main XML file on your server
 ## Workflow
 
 Every time you want to run the app, you need to FTP the new version of the app and scan the QR on your phone to run the app.
-
-## Debugging and Logging
-
-Arel has its own logging interface. To initiate it, run 
-
-```
-arel.Debug.activate();
-arel.Debug.activateArelLogStream();
-```
-
-inside your `arel.sceneReady` function. 
-
-To log something to arel's console, use , `arel.Debug.log("logging")` the same way you might use `console.log`.
-
-Arel populates the debugger with its own logging, so I also found it helpful 
-to create popup alerts for every error to catch when things go wrong:
-
-```
-window.onerror = function(msg) {
-	   alert('Error: ' + msg);
-}
-```
-
-If you are using Processing JS in your app, then another way to log is with `processing.println("logging")`. I prefer this because it is blank unless you write to it, unlike the mess of arel logs.
-
-## Junaio and the HTML5 Canvas API
-
-All of the canvas' built in functions work extremely well in Junaio. Two great resources here:
-
-* [docs](http://www.rgraph.net/reference/index.html)
-* [tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
