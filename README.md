@@ -31,7 +31,22 @@ arelApp.html:
 
 ```
 
-Make sure to link to the arel javascript library.
+Make sure to link to the arel javascript library.App.js and style.css are your own javascript and css files.
+
+In app.js:
+
+When arel content is loaded, the script will run the `arel.sceneReady()` method once. Use this method to initiate the arel debugging interface and if you are using the canvas API, also define the canvas and the 2D context on top of the canvas that you'll draw to. If you're using Processing JS, you'll define a Processing instance and call the Processing setup method. Inside the `arel.sceneReady()` function, you'll also set an interval (and thus the frame rate) at which AR content is drawn to the canvas.
+
+`arel.sceneReady()` for canvas API:
+```
+
+```
+
+`arel.sceneReady()` for Processing JS:
+```
+
+```
+
 
 ## Junaio and the HTML5 Canvas API
 
@@ -39,6 +54,11 @@ All of the canvas' built in functions work extremely well in Junaio. Two great r
 
 * [docs](http://www.rgraph.net/reference/index.html)
 * [tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
+
+## Junaio and Processing JS
+
+You don't need to define the context, Processing does this for you. Your `arel.sceneReady()` function will...
+...define a Processing instance: ...
 
 ## Debugging and Logging
 
