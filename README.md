@@ -6,13 +6,24 @@ Tracking the image.
 [Download](http://ar.metaio.com/download_creator) the Metaio Creator.
 
 In the creator, click on the Trackables icon: 
+
 ![Trackable Icon](http://s28.postimg.org/el3pd27u5/Screen_Shot_2014_12_06_at_8_44_47_PM.png) 
+
 Select Image Tracking: 
+
 ![Image Tracking](http://s28.postimg.org/l02q9qejt/Screen_Shot_2014_12_06_at_8_44_54_PM.png)
+
 Select the image you want to track. Creator will rate the trackability quality of the image: 
+
 ![Trackable Quality](http://s29.postimg.org/af9bdrvc3/Screen_Shot_2014_12_06_at_8_48_28_PM.png) 
-Then Export > Export Tracking Configuration File: ![Export](http://s18.postimg.org/aq5myx3uh/Screen_Shot_2014_12_06_at_8_48_49_PM.png) 
-Save it to your app as a ZIP file, not a TXT: ![Save](http://s15.postimg.org/8dqpb6s3f/Screen_Shot_2014_12_06_at_8_49_10_PM.png)
+
+Then Export > Export Tracking Configuration File: 
+
+![Export](http://s18.postimg.org/aq5myx3uh/Screen_Shot_2014_12_06_at_8_48_49_PM.png) 
+
+Save it to your app as a ZIP file, not a TXT: 
+
+![Save](http://s15.postimg.org/8dqpb6s3f/Screen_Shot_2014_12_06_at_8_49_10_PM.png)
 
 To run the app:
 Register for a Junaio developer's account here:
