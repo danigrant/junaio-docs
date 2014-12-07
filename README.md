@@ -39,7 +39,28 @@ Give a channel name, description, link to the app's main XML file on your server
 
 Every time you want to run the app, you need to FTP the new version of the app and scan the QR on your phone to run the app.
 
- 
+## Debugging and Logging
+
+Arel has it's own logging interface. To initiate it, run 
+
+```
+arel.Debug.activate();
+arel.Debug.activateArelLogStream();
+```
+
+inside your `arel.sceneReady` function. 
+
+To log something to arel's console, use , `arel.Debug.log("logging")` the same way you might use `console.log`.
+
+Arel populates the debugger with its own logging, so I also found it helpful 
+to create popup alerts for every error to catch when things go wrong:
+
+```
+window.onerror = function(msg) {
+	   alert('Error: ' + msg);
+}
+```
+
 
 
 
