@@ -35,6 +35,10 @@ Click New Channel.
 ![New Channel](http://s10.postimg.org/l9dksgd51/Screen_Shot_2014_12_06_at_8_35_55_PM.png)
 Give a channel name, description, link to the app's main XML file on your server (a green check mark should appear if the link is valid), click Create.
 
+## Workflow
+
+Every time you want to run the app, you need to FTP the new version of the app and scan the QR on your phone to run the app.
+
  
 
 
