@@ -2,6 +2,19 @@ junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
 
+## Document Structure
+
+Create an XML file with links to your tracking data (see creating tracking data) and to your main html document:
+
+```
+<!-- arelConfig.xml -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<results trackingurl="Assets/TrackingData.zip">
+  <arel><![CDATA[arelTutorial.html]]></arel>
+</results>
+```
+
 ## Junaio and the HTML5 Canvas API
 
 All of the canvas' built in functions work extremely well in Junaio. Two great resources here:
