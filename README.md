@@ -119,6 +119,31 @@ All of the canvas' built in functions work extremely well in Junaio. Two great r
 
 ## Junaio and Processing JS
 
+To run Processing JS in Junaio, you need to write processing code as pre-parsed javascript.
+
+Every processing method can be called as it, wrapped under the global processing object.
+
+For example:
+
+`background(255)` becomes `processing.background(255)`
+
+and `ellipse(50,50,20,20)` becomes `processing.ellipse(50,50,20,20)`
+
+You'll still have a setup and draw function, with the processing instance and canvas element to be passed in. Setup is called once at the beginning in the arel.sceneReady function and draw is called once every frame from the getTexture method.
+
+```
+function setup(processing, canvas) {
+	processing.size(200,200);
+	//etc.
+}
+
+function draw(processing, canvas) {
+	processing.stroke(255);
+	processing.rect(20,20,0,0);
+	//etc.
+}
+```
+
 ## Making the program interactive with DOM buttons
 
 ## Debugging and Logging
