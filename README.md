@@ -39,7 +39,35 @@ When arel content is loaded, the script will run the `arel.sceneReady()` method 
 
 `arel.sceneReady()` for canvas API:
 ```
+arel.sceneReady(function() 
+{
+	//debug
+	arel.Debug.activate();
+	arel.Debug.activateArelLogStream();
 
+	//create an HTML5 Canvas
+	var canvas = document.createElement("canvas");
+	canvas.width = 512;
+	canvas.height = 512;
+
+	//get a 2D context
+	var context = canvas.getContext('2d');
+
+	//acquire texture 
+	var image = getTexture(canvas, context);
+	
+	//create 3D model from image
+	myObject = new arel.Object.Model3D.createFromArelImage("myObject", image);
+	
+	//scale 3D model
+	myObject.setScale(new arel.Vector3D(5.0, 5.0, 5.0));
+	arel.Scene.addObject(myObject); //var myObject needs to be first defined globally outside of sceneReady
+	
+	//update texture every 1 second
+	setInterval( function(){
+		myObject.setTexture("myObject", getTexture(canvas, context, d));
+	}, 1000 ); // Junaio doesn't support intervals less than 500 miliseconds
+});
 ```
 
 `arel.sceneReady()` for Processing JS:
