@@ -113,8 +113,7 @@ All of the canvas' built in functions work extremely well in Junaio. Two great r
 
 ## Junaio and Processing JS
 
-You don't need to define the context, Processing does this for you. Your `arel.sceneReady()` function will...
-...define a Processing instance: ...
+## Making the program interactive with DOM buttons
 
 ## Debugging and Logging
 
