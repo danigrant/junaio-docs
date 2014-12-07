@@ -2,7 +2,8 @@ junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
 
-Tracking the image.
+## Tracking the image.
+
 [Download](http://ar.metaio.com/download_creator) the Metaio Creator.
 
 In the creator, click on the Trackables icon: 
@@ -25,7 +26,8 @@ Save it to your app as a ZIP file, not a TXT:
 
 ![Save](http://s15.postimg.org/8dqpb6s3f/Screen_Shot_2014_12_06_at_8_49_10_PM.png)
 
-To run the app:
+## To run the app:
+
 Register for a Junaio developer's account here:
 http://dev.junaio.com/index/main
 
