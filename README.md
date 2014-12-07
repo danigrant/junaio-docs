@@ -58,21 +58,49 @@ arel.sceneReady(function()
 	
 	//create 3D model from image
 	myObject = new arel.Object.Model3D.createFromArelImage("myObject", image);
+	//var myObject needs to be first defined globally outside of sceneReady
 	
 	//scale 3D model
 	myObject.setScale(new arel.Vector3D(5.0, 5.0, 5.0));
-	arel.Scene.addObject(myObject); //var myObject needs to be first defined globally outside of sceneReady
+	arel.Scene.addObject(myObject); 
+	
 	
 	//update texture every 1 second
 	setInterval( function(){
-		myObject.setTexture("myObject", getTexture(canvas, context, d));
+		myObject.setTexture("myObject", getTexture(canvas, context));
 	}, 1000 ); // Junaio doesn't support intervals less than 500 miliseconds
 });
 ```
 
 `arel.sceneReady()` for Processing JS:
 ```
+arel.sceneReady(function() 
+{
+	//create an HTML5 Canvas
+	var canvas = document.createElement("canvas");
 
+	//create processing instance 
+	var processing = new Processing(canvas);
+
+	//acquire texture 
+	var image = getTexture(processing, canvas);
+	
+	//create 3D model from image
+	myObject = new arel.Object.Model3D.createFromArelImage("myObject", image); 
+	//var myObject needs to be first defined globally outside of sceneReady
+	
+	//scale 3D model
+	myObject.setScale(new arel.Vector3D(5.0, 5.0, 5.0));
+	arel.Scene.addObject(myObject);
+
+	//run the processing sketch's setup method
+	setup(processing, canvas);
+	
+	//update texture every 1 second
+	setInterval( function(){
+		myObject.setTexture("myObject", getTexture(canvas, context, d));
+	}, 1000 ); // Junaio doesn't support intervals less than 500 miliseconds
+});
 ```
 
 
