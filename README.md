@@ -146,6 +146,14 @@ function draw(processing, canvas) {
 
 ## Making the program interactive with DOM buttons
 
+Any DOM buttons will fire any method that is assigned to the attribute ontouchstarted.
+
+For example:
+
+```
+<div id="up-arrow" ontouchstart="clickEvent('up')"></div>
+```
+
 ## Debugging and Logging
 
 Arel has its own logging interface. To initiate it, run 
