@@ -103,6 +103,12 @@ arel.sceneReady(function()
 });
 ```
 
+All of the drawing happens in getTexture, and whatever is drawn needs to in the end be encoded as an image and returned as image data to the arel scene.
+
+```
+var newImageData = canvas.toDataURL();
+return new arel.Image(newImageData);
+```
 
 ## Junaio and the HTML5 Canvas API
 
