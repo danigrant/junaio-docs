@@ -103,7 +103,7 @@ arel.sceneReady(function()
 });
 ```
 
-All of the drawing happens in getTexture, and whatever is drawn needs to in the end be encoded as an image and returned as image data to the arel scene.
+getTexture takes the canvas and context created in arel.sceneReady, draws to that canvas (if Processing) or context (if canvas api) and returns whatever is drawn that frame in the canvas as an image to the arel scene.
 
 ```
 var newImageData = canvas.toDataURL();
