@@ -6,9 +6,8 @@ Using Processing JS and HTML5 canvas API to create dynamic augmented reality app
 
 Create an XML file with links to your tracking data (see creating tracking data) and to your main html document:
 
+arelConfig.xml:
 ```
-<!-- arelConfig.xml -->
-
 <?xml version="1.0" encoding="UTF-8"?>
 <results trackingurl="Assets/TrackingData.zip">
   <arel><![CDATA[arelTutorial.html]]></arel>
