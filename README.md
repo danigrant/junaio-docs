@@ -66,5 +66,6 @@ If you are using Processing JS in your app, then another way to log is with `pro
 ## Junaio and the HTML5 Canvas API
 
 All of the canvas' built in functions work extremely well in Junaio. Two great resources here:
-*[docs](http://www.rgraph.net/reference/index.html)
-*[tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
+
+* [docs](http://www.rgraph.net/reference/index.html)
+* [tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
