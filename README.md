@@ -12,7 +12,7 @@ Register for a Junaio developer's account here:
 http://dev.junaio.com/index/main
 
 Click New Channel.
-![New Channel](http://postimg.org/image/l9dksgd51/)
+![New Channel](http://s10.postimg.org/l9dksgd51/Screen_Shot_2014_12_06_at_8_35_55_PM.png)
 Give a channel name, description, link to the app's main XML file on your server (a green check mark should appear if the link is valid), click Create.
 
  
