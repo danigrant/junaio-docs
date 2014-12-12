@@ -4,7 +4,6 @@ static content on canvas/proc
 dynamic content on canvas/proc
 dom interaction on canvas/proc
 
-
 junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
@@ -13,7 +12,7 @@ Using Processing JS and HTML5 canvas API to create dynamic augmented reality app
 
 Create an XML file with links to your tracking data ([see creating tracking data](#creating-image-tracking-data)) and to your main html document:
 
-arelConfig.xml:
+**arelConfig.xml:**
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <results trackingurl="TrackingData.zip">
@@ -23,7 +22,7 @@ arelConfig.xml:
 
 Create an html file to contain links to JS libraries and files as well as serve as the DOM overlay to your app:
 
-arelApp.html:
+**arelApp.html:**
 ```
 <html>
 <head>
@@ -38,13 +37,15 @@ arelApp.html:
 
 ```
 
-Make sure to link to the arel javascript library.App.js and style.css are your own javascript and css files.
+Make sure to link to the arel javascript library ([arel.js](http://dev.junaio.com/arel/js/arel.js)). App.js and style.css are examples of your own javascript and css files.
 
 In app.js:
 
-When arel content is loaded, the script will run the `arel.sceneReady()` method once. Use this method to initiate the arel debugging interface and if you are using the canvas API, also define the canvas and the 2D context on top of the canvas that you'll draw to. If you're using Processing JS, you'll define a Processing instance and call the Processing setup method. Inside the `arel.sceneReady()` function, you'll also set an interval (and thus the frame rate) at which AR content is drawn to the canvas.
+When arel content is loaded, the script will run the `arel.sceneReady()` method once. Use this method to initiate the arel debugging interface and if you are using the canvas API, also define the canvas and the 2D context on top of the canvas that you'll draw to. 
 
-`arel.sceneReady()` for canvas API:
+If you're using Processing JS, you'll define a Processing instance and call the setup() method of your Processing sketch. Inside the `arel.sceneReady()` function, you'll also set an interval (and thus the frame rate) at which AR content is drawn to the canvas. Junaio supports you setting an interval of 500 miliseconds or higher. Less than 500 miliseconds won't throw an error, but it will freeze and stop updating the canvas.
+
+`arel.sceneReady()` for **canvas API:**
 ```
 arel.sceneReady(function() 
 {
@@ -79,7 +80,7 @@ arel.sceneReady(function()
 });
 ```
 
-`arel.sceneReady()` for Processing JS:
+`arel.sceneReady()` for **Processing JS:**
 ```
 arel.sceneReady(function() 
 {
@@ -126,9 +127,7 @@ All of the canvas' built in functions work extremely well in Junaio. Two great r
 
 ## Junaio and Processing JS
 
-To run Processing JS in Junaio, you need to write processing code as pre-parsed javascript.
-
-Every processing method can be called as it, wrapped under the global processing object.
+To run Processing JS in Junaio, you need to write processing code as pre-parsed javascript. This means calling any Processing function under the javascript Processing object.
 
 For example:
 
@@ -136,7 +135,7 @@ For example:
 
 and `ellipse(50,50,20,20)` becomes `processing.ellipse(50,50,20,20)`
 
-You'll still have a setup and draw function, with the processing instance and canvas element to be passed in. Setup is called once at the beginning in the arel.sceneReady function and draw is called once every frame from the getTexture method.
+You'll still have a setup and draw function, with the Processing instance and canvas element to be passed in. Setup is called once at the beginning in the arel.sceneReady function and draw is called once every frame from the getTexture method.
 
 ```
 function setup(processing, canvas) {
@@ -160,6 +159,8 @@ For example:
 ```
 <div id="up-arrow" ontouchstart="clickEvent('up')"></div>
 ```
+
+Then you would have in your javascript a clickEvent function that does whatever action you assign to that arrow. You might, for example, if someone hits the up arrow, change the direction variable `dir` to 'up' and then in the draw loop, if `dir` is up, increment the y value of an object by 10. 
 
 ## Debugging and Logging
 
