@@ -40,6 +40,7 @@ arel.sceneReady(function()
 	setInterval( function(){
 		myObject.setTexture("myObject", getTexture(canvas, context));
 	}, 500 ); 
+});
 
 function getTexture(canvas, context)
 {	
@@ -54,7 +55,8 @@ function getTexture(canvas, context)
 	return new arel.Image(newImageData);
 }
 
-function draw(context) {
+function draw(context) 
+{
 	context.fillStyle = 'rgba(74, 144, 226 ,255)';
 	context.beginPath();
     context.arc(x, y, 50, 0, 2 * Math.PI, false);
