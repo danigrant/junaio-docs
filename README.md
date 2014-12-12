@@ -1,9 +1,3 @@
-todo:
-clean sample apps:
-static content on canvas/proc
-dynamic content on canvas/proc
-dom interaction on canvas/proc
-
 junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
