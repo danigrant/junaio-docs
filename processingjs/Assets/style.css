@@ -1,0 +1,58 @@
+* {
+	-webkit-highlight: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	/* -webkit-text-size-adjust: 100%; */
+	background-color: transparent
+}
+
+.joypadContainer {
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -45px;
+}
+
+ul.joypad {
+	width: 90px;
+	height: 90px;
+	position: relative;
+}
+
+ul.joypad li {
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+
+	position: absolute;
+	font-size: 0;
+	list-style: none;
+}
+
+ul.joypad li:nth-child(1) {
+	background-image: url(images/up.png);
+	top : 0;
+	left: 30px;
+}
+ul.joypad li:nth-child(2) {
+	background-image: url(images/right.png);
+	top : 30px;
+	left: 60px;
+}
+ul.joypad li:nth-child(3) {
+	background-image: url(images/down.png);
+	top : 60px;
+	left: 30px;
+}
+ul.joypad li:nth-child(4) {
+	background-image: url(images/left.png);
+	top : 30px;
+	left: 0;
+}
