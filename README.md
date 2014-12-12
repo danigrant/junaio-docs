@@ -1,3 +1,6 @@
+todo: create pages with qr and tracking image for each sample app
+test the sample apps to make sure nothing was screwed up with cleaning
+
 junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
