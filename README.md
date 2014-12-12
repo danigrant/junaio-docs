@@ -2,6 +2,8 @@ junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
 
+In this repository there are four sample apps to demonstrate how to draw in the canvas in Junaio with and without interaction with both canvas and processing. To run these apps, scan the appropriate qr codes at the [bottom of this readme]() and then the [metaio man image]() below them.
+
 ## Document Structure
 
 Create an XML file with links to your tracking data ([see creating tracking data](#creating-image-tracking-data)) and to your main html document:
@@ -222,3 +224,19 @@ Every time you want to run the app, you need to FTP the new version of the app a
 Hasn't been tested on Android version of the Junaio App. 
 All added content creates extra lag. 
 Images and javascript libraries such as JQuery make the load time for the app significantly longer.
+
+##QR Codes For The Sample Apps
+
+**QR For Canvas_Static**
+
+![qr_static_canvas](http://s18.postimg.org/ovzsjhal5/qr_static_canvas.png)
+
+**QR For Canvas_Animation**
+
+**QR For Canvas_Interactive**
+
+**QR For Processing**
+
+##Image to Scan To Run Apps
+
+![metaio man](http://s18.postimg.org/5tgewjzkp/Screen_Shot_2014_12_12_at_5_53_18_PM.png)
