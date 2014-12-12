@@ -7,11 +7,11 @@ dom interaction on canvas/proc
 
 junaio-docs
 ===========
-Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
+<span style="color:blue;">Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.</span>
 
 ## Document Structure
 
-Create an XML file with links to your tracking data (see creating tracking data) and to your main html document:
+Create an XML file with links to your tracking data (<a href="#createTracking">see creating tracking data</a>) and to your main html document:
 
 arelConfig.xml:
 ```
@@ -185,7 +185,7 @@ window.onerror = function(msg) {
 
 If you are using Processing JS in your app, then another way to log is with `processing.println("logging")`. I prefer this because it is blank unless you write to it, unlike the mess of arel logs.
 
-## Tracking the image.
+## <span id="createTracking">Creating Image Tracking Data</span>
 
 [Download](http://ar.metaio.com/download_creator) the Metaio Creator.
 
