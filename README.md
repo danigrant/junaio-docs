@@ -1,8 +1,5 @@
-todo:
-clean sample apps:
-static content on canvas/proc
-dynamic content on canvas/proc
-dom interaction on canvas/proc
+todo: create pages with qr and tracking image for each sample app
+test the sample apps to make sure nothing was screwed up with cleaning
 
 junaio-docs
 ===========
