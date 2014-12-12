@@ -11,7 +11,7 @@ junaio-docs
 
 ## Document Structure
 
-Create an XML file with links to your tracking data (<a href="#createTracking">see creating tracking data</a>) and to your main html document:
+Create an XML file with links to your tracking data ([see creating tracking data](#createTracking)) and to your main html document:
 
 arelConfig.xml:
 ```
