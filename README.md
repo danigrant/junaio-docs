@@ -2,7 +2,7 @@ junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
 
-In this repository there are four sample apps to demonstrate how to draw in the canvas in Junaio with and without interaction with both canvas and processing. To run these apps, scan the appropriate qr codes at the [bottom of this readme]() and then the [metaio man image]() below them.
+In this repository there are four sample apps to demonstrate how to draw in the canvas in Junaio with and without interaction with both canvas and processing. To run these apps, scan the appropriate qr codes at the [bottom of this readme](#qr-codes-for-the-sample-apps) and then the [metaio man image]() below them.
 
 ## Document Structure
 
