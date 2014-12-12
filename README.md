@@ -229,7 +229,7 @@ Images and javascript libraries such as JQuery make the load time for the app si
 
 **QR For Canvas_Static**
 
-![qr_static_canvas](http://s18.postimg.org/ovzsjhal5/qr_static_canvas.png)
+![qr_static_canvas](http://s10.postimg.org/b3kovaznd/qr_static_canvas.png)
 
 **QR For Canvas_Animation**
 
