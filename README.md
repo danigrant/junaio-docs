@@ -1,6 +1,3 @@
-todo: create pages with qr and tracking image for each sample app
-test the sample apps to make sure nothing was screwed up with cleaning
-
 junaio-docs
 ===========
 Using Processing JS and HTML5 canvas API to create dynamic augmented reality apps with Junaio.
@@ -219,3 +216,9 @@ Give a channel name, description, link to the app's main XML file on your server
 ## Workflow
 
 Every time you want to run the app, you need to FTP the new version of the app and scan the QR on your phone to run the app.
+
+##Limitations
+
+Hasn't been tested on Android version of the Junaio App. 
+All added content creates extra lag. 
+Images and javascript libraries such as JQuery make the load time for the app significantly longer.
