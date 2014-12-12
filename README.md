@@ -233,9 +233,15 @@ Images and javascript libraries such as JQuery make the load time for the app si
 
 **QR For Canvas_Animation**
 
+![qr for animated canvas](http://s9.postimg.org/fefart14f/qr_animation_canvas.png)
+
 **QR For Canvas_Interactive**
 
+![qr for interactive canvas](http://s22.postimg.org/5e16vi6ep/qr_interactive_canvas.png)
+
 **QR For Processing**
+
+![qr for processing](http://s24.postimg.org/mexeqcbwl/qr_processing.png)
 
 ##Image to Scan To Run Apps
 
